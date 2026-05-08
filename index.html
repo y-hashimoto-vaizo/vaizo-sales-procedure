@@ -7,50 +7,19 @@
   * { margin: 0; padding: 0; box-sizing: border-box;
       font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif; }
   body { background: #F5F5F5; color: #111111; padding: 40px 0; }
-
-  .slide {
-    width: 1600px; height: 900px;
-    background: #FFFFFF;
-    padding: 70px 90px;
-    margin: 0 auto 40px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-
+  .slide { width: 1600px; height: 900px; background: #FFFFFF; padding: 70px 90px; margin: 0 auto 40px; position: relative; overflow: hidden; display: flex; flex-direction: column; }
   .slide-mission { background: #111111; color: #FFFFFF; justify-content: center; }
-
-  .header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 32px;
-  }
-
+  .header-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 32px; }
   .eyebrow { font-size: 12px; color: #888; letter-spacing: 7px; font-weight: 700; }
   .num { font-size: 12px; color: #E85D2F; letter-spacing: 3px; font-weight: 800; }
-
-  h1 {
-    font-size: 52px; font-weight: 800;
-    letter-spacing: -1.2px;
-    line-height: 1.2;
-    padding-bottom: 22px;
-    border-bottom: 1px solid #111;
-    margin-bottom: 32px;
-  }
-
-  .lead { font-size: 22px; line-height: 1.7; color: #111; font-weight: 700; margin-bottom: 20px; }
+  h1 { font-size: 52px; font-weight: 800; letter-spacing: -1.2px; line-height: 1.2; padding-bottom: 22px; border-bottom: 1px solid #111; margin-bottom: 32px; }
   .body-large { font-size: 17px; line-height: 1.85; color: #444; font-weight: 500; }
   .accent { color: #E85D2F; font-weight: 800; }
   .bold { font-weight: 800; color: #111; }
-
   .slide-mission .eyebrow { color: #888; }
   .slide-mission .num { color: #E85D2F; }
-
   .mission-statement { font-size: 88px; font-weight: 800; line-height: 1.25; letter-spacing: -2px; color: #FFF; }
   .mission-sub { font-size: 20px; line-height: 1.9; color: #888; margin-top: 56px; letter-spacing: 2px; font-weight: 700; }
-
   .commit-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 12px; }
   .commit-card { border: 1px solid #111; padding: 32px 28px; display: flex; flex-direction: column; background: #FFF; }
   .commit-card .card-num { font-size: 14px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 12px; }
@@ -59,50 +28,31 @@
   .commit-card .card-desc { font-size: 14px; line-height: 1.75; color: #444; margin-bottom: 18px; flex: 1; }
   .commit-card .card-meta { border-top: 1px solid #E5E5E5; padding-top: 14px; font-size: 12px; color: #888; line-height: 1.7; }
   .commit-card .card-meta .k { color: #111; font-weight: 800; }
-
-  .commit-bottom { margin-top: 32px; padding: 22px 28px; background: #111; color: #FFF; font-size: 20px; font-weight: 800; line-height: 1.5; }
+  .commit-bottom { margin-top: 28px; padding: 20px 28px; background: #111; color: #FFF; font-size: 18px; font-weight: 800; line-height: 1.55; }
   .commit-bottom .bottom-eyebrow { font-size: 11px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 8px; display: block; }
-
-  .url-box {
-    background: #F5F5F5; padding: 26px 32px;
-    font-family: 'Courier New', 'Consolas', monospace;
-    font-size: 20px; color: #111;
-    margin: 14px 0 22px; word-break: break-all;
-    border-left: 5px solid #E85D2F;
-    line-height: 1.5; font-weight: 700;
-  }
-  .url-box .url-eyebrow {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 11px; color: #888;
-    letter-spacing: 4px; font-weight: 800;
-    display: block; margin-bottom: 8px;
-  }
-
+  .commit-bottom .audit-line { font-size: 13px; font-weight: 700; color: #BBB; margin-top: 10px; line-height: 1.6; letter-spacing: 1px; }
+  .url-box { background: #F5F5F5; padding: 26px 32px; font-family: 'Courier New', 'Consolas', monospace; font-size: 20px; color: #111; margin: 14px 0 22px; word-break: break-all; border-left: 5px solid #E85D2F; line-height: 1.5; font-weight: 700; }
+  .url-box .url-eyebrow { font-family: 'Helvetica Neue', sans-serif; font-size: 11px; color: #888; letter-spacing: 4px; font-weight: 800; display: block; margin-bottom: 8px; }
   .step-grid { display: grid; grid-template-columns: 60px 1fr; gap: 14px 24px; margin-top: 8px; }
   .step-grid .step-num { font-size: 22px; font-weight: 800; color: #E85D2F; text-align: right; line-height: 1.4; border-right: 1px solid #111; padding-right: 18px; }
   .step-grid .step-body { font-size: 15px; line-height: 1.7; color: #111; }
   .step-grid .step-body .step-time { display: inline-block; font-size: 10px; font-weight: 800; color: #E85D2F; letter-spacing: 3px; margin-bottom: 2px; }
   .step-grid .step-body .step-detail { font-size: 14px; color: #444; line-height: 1.75; }
-
   .example-block { border-left: 4px solid #111; padding: 12px 18px; background: #F5F5F5; margin-bottom: 8px; font-family: 'Courier New', 'Consolas', monospace; font-size: 12.5px; line-height: 1.6; color: #111; }
   .example-block .ex-label { font-family: 'Helvetica Neue', sans-serif; font-size: 10px; font-weight: 800; color: #E85D2F; letter-spacing: 3px; margin-bottom: 4px; display: block; }
-
   .forbidden-list { margin-top: 12px; list-style: none; padding: 0; }
   .forbidden-list li { font-size: 18px; font-weight: 800; color: #111; padding: 14px 22px; margin-bottom: 8px; border-left: 5px solid #E85D2F; background: #F5F5F5; line-height: 1.4; }
   .forbidden-list li .label { font-size: 10px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; display: block; margin-bottom: 4px; }
-
   .qa-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 8px; }
   .qa-block { padding: 6px 0; }
   .qa-block .q { font-weight: 800; color: #111; font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
   .qa-block .q::before { content: "Q. "; color: #E85D2F; font-weight: 800; }
   .qa-block .a { font-size: 13px; color: #444; padding-left: 22px; line-height: 1.65; }
   .qa-block .a::before { content: "A. "; color: #111; font-weight: 800; margin-left: -22px; }
-
   .footer-meta { position: absolute; bottom: 32px; left: 90px; right: 90px; display: flex; justify-content: space-between; font-size: 11px; color: #888; letter-spacing: 2px; }
   .quote-bottom { font-size: 14px; color: #444; margin-top: auto; padding-top: 22px; font-weight: 600; line-height: 1.6; }
   .section-h { font-size: 13px; letter-spacing: 4px; color: #E85D2F; font-weight: 800; margin-top: 18px; margin-bottom: 6px; }
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 8px; }
-
   @media print { body { background: #FFF; padding: 0; } .slide { margin: 0; page-break-after: always; } }
 </style>
 </head>
@@ -114,10 +64,7 @@
     <div class="num">01 / 05</div>
   </div>
   <p class="mission-statement">動いたら、即、<br>シートに記録する。</p>
-  <p class="mission-sub">
-    妥協しない / サボらない / 中途半端な仕事をしない<br>
-    記録のない動きは、私たちの仕事ではない。
-  </p>
+  <p class="mission-sub">妥協しない / サボらない / 中途半端な仕事をしない<br>記録のない動きは、私たちの仕事ではない。</p>
   <div class="footer-meta" style="color: #555;">
     <span>VAIZO ─ NON-NEGOTIABLE</span>
     <span>01</span>
@@ -132,7 +79,7 @@
   <h1>3点を、<br>必ず作る。</h1>
   <p class="body-large" style="margin-bottom: 14px;">
     候補1社につき、デモ製作担当 VAIZER は<span class="bold">3点セット</span>を必ず仕上げる。<br>
-    1点でも欠けた状態で送付してはならない。半端は、私たちの仕事ではない。
+    全件が対象。1点でも欠けた状態で送付してはならない。半端は、私たちの仕事ではない。
   </p>
   <div class="commit-grid">
     <div class="commit-card">
@@ -140,27 +87,28 @@
       <div class="card-name">カスタムデモ</div>
       <div class="card-en">DEMO</div>
       <div class="card-desc">候補のWebサイトを下敷きに、業種・課題に合わせて構築するカスタム成果物。動くものを見せる。</div>
-      <div class="card-meta"><span class="k">追跡列</span> P デモ製作完了日<br><span class="k">ログ種別</span> デモ完成</div>
+      <div class="card-meta"><span class="k">追跡列</span> L デモ製作完成日<br><span class="k">ログ種別</span> デモ完成</div>
     </div>
     <div class="commit-card">
       <div class="card-num">COMMIT 02</div>
       <div class="card-name">脆弱性<br>レポート</div>
       <div class="card-en">VULNERABILITY REPORT</div>
       <div class="card-desc">候補の現サイトの構造的・体験的な問題点を整理した可視化資料。なぜ変える必要があるかを示す。</div>
-      <div class="card-meta"><span class="k">追跡列</span> Q 脆弱性レポート完成日<br><span class="k">ログ種別</span> 脆弱性レポート完成</div>
+      <div class="card-meta"><span class="k">追跡列</span> M 脆弱性レポート完成日<br><span class="k">ログ種別</span> 脆弱性レポート完成</div>
     </div>
     <div class="commit-card">
       <div class="card-num">COMMIT 03</div>
       <div class="card-name">コンセプト<br>シート</div>
       <div class="card-en">CONCEPT SHEET</div>
       <div class="card-desc">どこに連れていくか、どう変わるかを言語化した提案の輪郭。デモを支える文脈を一枚で示す。</div>
-      <div class="card-meta"><span class="k">追跡列</span> R コンセプトシート完成日<br><span class="k">ログ種別</span> コンセプトシート完成</div>
+      <div class="card-meta"><span class="k">追跡列</span> N コンセプトシート完成日<br><span class="k">ログ種別</span> コンセプトシート完成</div>
     </div>
   </div>
   <div class="commit-bottom">
     <span class="bottom-eyebrow">RULE — NON-NEGOTIABLE</span>
     3点が揃わない限り、ファーストタッチ（3点セット送付）は打たない。<br>
-    候補リスト P / Q / R がすべて埋まって、初めて S列「3点セット送付日」へ進める。
+    候補リスト L / M / N がすべて埋まって、初めて O列「3点セット送付日」へ進める。
+    <div class="audit-line">QUALITY AUDIT — 舛谷 / 橋本 / 外部デザイナーの3者監査をもって完成と扱う。明文基準は持たない。私たちの判断がそのまま基準となる。</div>
   </div>
   <div class="footer-meta">
     <span>VAIZO ─ Sales Procedure Guide</span>
@@ -182,7 +130,7 @@
     <div class="step-num">01</div>
     <div class="step-body"><div class="step-detail">上のURLをChromeで開き、<span class="bold">ブックマークバーに固定</span>する。</div></div>
     <div class="step-num">02</div>
-    <div class="step-body"><div class="step-detail">3タブ構成を確認：<span class="bold">候補リスト / アクションログ / 日報集計</span>。候補リストはA-Sの19列（手動11＋自動8）。</div></div>
+    <div class="step-body"><div class="step-detail">3タブ構成を確認：<span class="bold">候補リスト / アクションログ / 日報集計</span>。候補リストはA-Sの19列（手動11＋自動8）。L〜O＝3点製作・送付、P〜S＝接触履歴。</div></div>
     <div class="step-num">03</div>
     <div class="step-body"><div class="step-detail">候補リスト E列「営業窓口VAIZER」と F列「デモ製作担当VAIZER」で<span class="bold">自分のフルネーム</span>を検索。担当案件と、3点コミットの責任を把握。</div></div>
     <div class="step-num">04</div>
@@ -216,7 +164,7 @@
     <div class="step-num">03</div>
     <div class="step-body">
       <div class="step-time">1分</div>
-      <div class="step-detail"><span class="bold">自分の担当を絞り込み。</span>L-S列の空欄＝未着手。3点コミット（P/Q/R）と送付状況（S）を確認。</div>
+      <div class="step-detail"><span class="bold">自分の担当を絞り込み。</span>L-O列＝3点製作・送付状況、P-S列＝接触履歴。空欄＝未着手。</div>
     </div>
     <div class="step-num">04</div>
     <div class="step-body">
@@ -229,13 +177,13 @@
     動いたら即、タブ②に1行追記。<span class="bold">後回しは禁止。</span>記入と同時にL-S列が自動更新される。
   </p>
   <div class="example-block">
-    <span class="ex-label">電話</span>2026-05-09 10:30 / P0003 / [担当VAIZER] / 電話 / 候補先へ架電・10分対話、反応良好、来週MTG調整
-  </div>
-  <div class="example-block">
-    <span class="ex-label">脆弱性レポート完成</span>2026-05-09 13:00 / P0001 / [担当VAIZER] / 脆弱性レポート完成 / 現サイト分析A4×3枚、PDF納品
-  </div>
-  <div class="example-block">
     <span class="ex-label">3点セット送付</span>2026-05-09 16:00 / P0007 / [担当VAIZER] / 3点セット送付 / 候補先宛、デモ＋脆弱性＋コンセプトURLを1通のメールで送信
+  </div>
+  <div class="example-block">
+    <span class="ex-label">メール</span>2026-05-12 10:00 / P0007 / [担当VAIZER] / メール / 候補先宛、3点セット見ていただけたか確認のリマインドメール送信
+  </div>
+  <div class="example-block">
+    <span class="ex-label">電話</span>2026-05-15 11:30 / P0007 / [担当VAIZER] / 電話 / 候補先へ架電・10分対話、反応良好、来週MTG調整
   </div>
   <div class="footer-meta">
     <span>VAIZO ─ Sales Procedure Guide</span>
@@ -261,7 +209,7 @@
       <ul class="forbidden-list">
         <li><span class="label">FORBIDDEN 01</span>別ファイル・別タブで候補管理</li>
         <li><span class="label">FORBIDDEN 02</span>共有担当・連名（1案件1名固定）</li>
-        <li><span class="label">FORBIDDEN 03</span>3点未完成での送付（P/Q/R空でSへ進めない）</li>
+        <li><span class="label">FORBIDDEN 03</span>3点未完成での送付（L/M/N空でO「3点セット送付日」へ進めない）</li>
       </ul>
     </div>
     <div>
@@ -281,7 +229,11 @@
         </div>
         <div class="qa-block">
           <div class="q">期待値の付け方は？</div>
-          <div class="a">月曜会議で議論決定。S/A だけが3点製作対象。</div>
+          <div class="a">月曜会議で議論決定。3点セットは全件作る前提。期待値は着手順を決める軸（S→A→B→C）。</div>
+        </div>
+        <div class="qa-block">
+          <div class="q">次アクション＝次ステージ？</div>
+          <div class="a">別概念。次アクション＝具体的な次の動き。次ステージ＝フロー上の段階。次アクションを実行した結果、ステージが進む／留まる。</div>
         </div>
       </div>
     </div>
