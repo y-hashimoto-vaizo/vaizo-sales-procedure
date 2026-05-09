@@ -20,20 +20,18 @@
   .slide-mission .num { color: #E85D2F; }
   .mission-statement { font-size: 76px; font-weight: 800; line-height: 1.3; letter-spacing: -1.5px; color: #FFF; }
   .mission-sub { font-size: 17px; line-height: 1.95; color: #888; margin-top: 48px; letter-spacing: 1.5px; font-weight: 700; }
-  .premise-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 4px; }
-  .premise-col { display: flex; flex-direction: column; }
-  .premise-label { font-size: 11px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 8px; }
-  .premise-h { font-size: 22px; font-weight: 800; color: #111; line-height: 1.35; margin-bottom: 14px; letter-spacing: -0.5px; }
-  .premise-list { list-style: none; padding: 0; }
-  .premise-list li { font-size: 13.5px; line-height: 1.75; color: #444; padding-left: 18px; position: relative; margin-bottom: 6px; }
-  .premise-list li::before { content: ""; position: absolute; left: 0; top: 12px; width: 8px; height: 1px; background: #111; }
-  .premise-col.solution .premise-list li::before { background: #E85D2F; height: 2px; }
-  .ltv-strip { margin-top: 22px; padding: 18px 24px; background: #111; color: #FFF; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; align-items: center; }
-  .ltv-strip .ltv-label { font-size: 10px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 4px; }
-  .ltv-strip .ltv-value { font-size: 22px; font-weight: 800; line-height: 1.35; color: #FFF; letter-spacing: -0.5px; }
-  .ltv-strip .ltv-arrow { color: #E85D2F; font-size: 22px; font-weight: 800; text-align: center; }
-  .premise-bottom { margin-top: 18px; font-size: 13px; line-height: 1.75; color: #444; font-weight: 600; }
-  .premise-bottom .bold { color: #111; }
+  .files-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 4px; }
+  .file-cell { border: 1px solid #111; padding: 18px 20px; display: flex; flex-direction: column; }
+  .file-cell.archive { border: 1px dashed #BBB; }
+  .file-label { font-size: 10px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #E5E5E5; }
+  .file-cell.archive .file-label { color: #999; }
+  .file-item { margin-bottom: 12px; }
+  .file-item:last-child { margin-bottom: 0; }
+  .file-name { font-size: 13px; font-weight: 800; color: #111; line-height: 1.45; margin-bottom: 3px; letter-spacing: -0.2px; }
+  .file-meta { font-size: 10.5px; color: #888; margin-bottom: 3px; line-height: 1.5; letter-spacing: 0.3px; }
+  .file-when { font-size: 11.5px; color: #444; line-height: 1.55; font-weight: 600; }
+  .file-cell.archive .file-name { color: #555; }
+  .file-cell.archive .file-when { color: #777; }
   .commit-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 4px; }
   .commit-card { border: 1px solid #111; padding: 22px 22px 18px; display: flex; flex-direction: column; background: #FFF; min-height: 280px; }
   .commit-card .card-num { font-size: 11px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 10px; }
@@ -88,45 +86,65 @@
 
 <div class="slide">
   <div class="header-row">
-    <div class="eyebrow">VAIZO ─ STRATEGIC PREMISE</div>
+    <div class="eyebrow">VAIZO ─ FILE STRUCTURE</div>
     <div class="num">02 / 06</div>
   </div>
-  <h1>Web刷新と広告は、分離できない。</h1>
-  <p class="subtitle">V/ENTER（Web刷新）→ V/LISTING（検索広告 AI）を <span class="bold">1社で受け持つ</span> のが、VAIZOの構造的優位。営業はこの前提で全活動を設計する。</p>
-  <div class="premise-grid">
-    <div class="premise-col">
-      <div class="premise-label">PROBLEM — 業界に潜む構造的な壁</div>
-      <div class="premise-h">広告費を増やしたいが、踏み切れない。</div>
-      <ul class="premise-list">
-        <li>LPのCVRが最適化されておらず、広告費を増やしても効率が悪化する</li>
-        <li>制作会社と広告代理店が別。サイトと広告のチューニングが分離しPDCAが回らない</li>
-        <li>「広告は燃えるもの」と諦めている経営者が、本当はサイト側の問題に気付けていない</li>
-      </ul>
+  <h1>使うファイルは、これだけ。</h1>
+  <p class="subtitle">どのファイルを使えばいいか迷ったら、このページに戻る。<span class="bold">マスター以外は触らない。</span>これ以外のファイルは正規ではない。</p>
+  <div class="files-grid">
+    <div class="file-cell">
+      <div class="file-label">DAILY — 毎日使う</div>
+      <div class="file-item">
+        <div class="file-name">VAIZO_営業候補リスト_master_20260508</div>
+        <div class="file-meta">Google Sheet ／ 002_営業部 ／ 02_営業運用</div>
+        <div class="file-when">候補閲覧・ステージ更新・アクションログ追記</div>
+      </div>
+      <div class="file-item">
+        <div class="file-name">VAIZO_営業向け運用手順_v1（本資料）</div>
+        <div class="file-meta">HTML ／ 002_営業部 ／ 02_営業運用 ／ GitHub Pages</div>
+        <div class="file-when">運用ルール確認・新人オンボーディング</div>
+      </div>
     </div>
-    <div class="premise-col solution">
-      <div class="premise-label">SOLUTION — V/ENTER × V/LISTING の継ぎ目</div>
-      <div class="premise-h">同じ会社が、サイトと広告を見る。</div>
-      <ul class="premise-list">
-        <li>V/ENTER：CVR最適化前提のWeb刷新／GA4・コンバージョン計測整備</li>
-        <li>V/LISTING：キーワード選定・入札最適化・クリエイティブA/Bテストを月次で運用</li>
-        <li>顧客から見て窓口がひとつ＝ストレスゼロ。改善ループが構造的に回り続ける</li>
-      </ul>
+    <div class="file-cell">
+      <div class="file-label">STRATEGIC — 戦略前提（理解必須）</div>
+      <div class="file-item">
+        <div class="file-name">V_ENTER戦略前提_Web刷新×検索広告クロスセル</div>
+        <div class="file-meta">Google Doc ／ 002_営業部 ／ 03_営業ナレッジ</div>
+        <div class="file-when">商談前・提案文面作成時に必読</div>
+      </div>
+      <div class="file-item">
+        <div class="file-name">【V_ENTER 営業ガイドライン】脆弱性レポート2ライン</div>
+        <div class="file-meta">Google Doc ／ 02_事業部別_EnterWebAI ／ マニュアル</div>
+        <div class="file-when">脆弱性レポート作成・送付時</div>
+      </div>
+    </div>
+    <div class="file-cell">
+      <div class="file-label">REFERENCE — 必要時に引く</div>
+      <div class="file-item">
+        <div class="file-name">V_ENTER_ターゲット基準書_v5</div>
+        <div class="file-meta">Google Sheet ／ 002_営業部 ／ 01_営業企画・戦略</div>
+        <div class="file-when">候補スコアリング・期待値判定時</div>
+      </div>
+      <div class="file-item">
+        <div class="file-name">VAIZO_見積書フォーマット_v2_20260508</div>
+        <div class="file-meta">Google Sheet ／ 002_営業部 直下</div>
+        <div class="file-when">見積書作成時</div>
+      </div>
+    </div>
+    <div class="file-cell archive">
+      <div class="file-label">ARCHIVE — 使わない</div>
+      <div class="file-item">
+        <div class="file-name">_old フォルダ内のすべて</div>
+        <div class="file-meta">002_営業部 ／ 各 _old サブフォルダ</div>
+        <div class="file-when">参照不要。最新版が正</div>
+      </div>
+      <div class="file-item">
+        <div class="file-name">VAIZO_営業手順表_v1（旧 Google Doc）</div>
+        <div class="file-meta">Google Doc ／ 002_営業部 ／ 03_営業ナレッジ</div>
+        <div class="file-when">本HTMLが後継。Doc版は参照不要</div>
+      </div>
     </div>
   </div>
-  <div class="ltv-strip">
-    <div>
-      <div class="ltv-label">V/ENTER 単発</div>
-      <div class="ltv-value">¥20〜30万</div>
-    </div>
-    <div class="ltv-arrow">＋ 継続クロスセル →</div>
-    <div>
-      <div class="ltv-label">年間 LTV</div>
-      <div class="ltv-value">¥56〜90万 / 社</div>
-    </div>
-  </div>
-  <p class="premise-bottom">
-    <span class="bold">営業必須行動：</span>商談・提案文面で必ずV/LISTINGクロスセルを示唆する（押し売りではなく選択肢提示）。受注後3〜6ヶ月のCS接点で広告運用状況を再確認し、課題があれば即V/LISTINGへ繋ぐ。
-  </p>
   <div class="footer-meta">
     <span>VAIZO ─ Sales Procedure Guide</span>
     <span>02</span>
@@ -279,8 +297,8 @@
           <div class="a">舛谷・橋本・外部デザイナーの3者。いずれか1名のGOで完成と扱う。</div>
         </div>
         <div class="qa-block">
-          <div class="q">V/LISTINGはいつ提案する？</div>
-          <div class="a">V/ENTER商談時に必ず示唆。受注後3〜6ヶ月のCS接点で広告運用状況を確認し、課題発見で即繋ぐ。</div>
+          <div class="q">どのファイルを使えばいい？</div>
+          <div class="a">スライド02「ファイル構成」を参照。マスター以外は触らない。</div>
         </div>
         <div class="qa-block">
           <div class="q">期待値の付け方は？</div>
