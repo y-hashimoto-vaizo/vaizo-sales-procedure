@@ -20,18 +20,6 @@
   .slide-mission .num { color: #E85D2F; }
   .mission-statement { font-size: 76px; font-weight: 800; line-height: 1.3; letter-spacing: -1.5px; color: #FFF; }
   .mission-sub { font-size: 17px; line-height: 1.95; color: #888; margin-top: 48px; letter-spacing: 1.5px; font-weight: 700; }
-  .files-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 4px; }
-  .file-cell { border: 1px solid #111; padding: 18px 20px; display: flex; flex-direction: column; }
-  .file-cell.archive { border: 1px dashed #BBB; }
-  .file-label { font-size: 10px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #E5E5E5; }
-  .file-cell.archive .file-label { color: #999; }
-  .file-item { margin-bottom: 12px; }
-  .file-item:last-child { margin-bottom: 0; }
-  .file-name { font-size: 13px; font-weight: 800; color: #111; line-height: 1.45; margin-bottom: 3px; letter-spacing: -0.2px; }
-  .file-meta { font-size: 10.5px; color: #888; margin-bottom: 3px; line-height: 1.5; letter-spacing: 0.3px; }
-  .file-when { font-size: 11.5px; color: #444; line-height: 1.55; font-weight: 600; }
-  .file-cell.archive .file-name { color: #555; }
-  .file-cell.archive .file-when { color: #777; }
   .commit-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 4px; }
   .commit-card { border: 1px solid #111; padding: 22px 22px 18px; display: flex; flex-direction: column; background: #FFF; min-height: 280px; }
   .commit-card .card-num { font-size: 11px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 10px; }
@@ -89,65 +77,29 @@
     <div class="eyebrow">VAIZO ─ FILE STRUCTURE</div>
     <div class="num">02 / 06</div>
   </div>
-  <h1>使うファイルは、これだけ。</h1>
-  <p class="subtitle">どのファイルを使えばいいか迷ったら、このページに戻る。<span class="bold">マスター以外は触らない。</span>これ以外のファイルは正規ではない。</p>
-  <div class="files-grid">
-    <div class="file-cell">
-      <div class="file-label">DAILY — 毎日使う</div>
-      <div class="file-item">
-        <div class="file-name">VAIZO_営業候補リスト_master_20260508</div>
-        <div class="file-meta">Google Sheet ／ 002_営業部 ／ 02_営業運用</div>
-        <div class="file-when">候補閲覧・ステージ更新・アクションログ追記</div>
-      </div>
-      <div class="file-item">
-        <div class="file-name">VAIZO_営業向け運用手順_v1（本資料）</div>
-        <div class="file-meta">HTML ／ 002_営業部 ／ 02_営業運用 ／ GitHub Pages</div>
-        <div class="file-when">運用ルール確認・新人オンボーディング</div>
-      </div>
+  <h1>使うファイルは、3つだけ。</h1>
+  <p class="subtitle">これ以外は意識しなくていい。具体的なテンプレや基準はすべて <span class="bold">CTO V/ENTER handbook</span> の中で参照する。</p>
+  <div class="commit-grid">
+    <div class="commit-card">
+      <div class="card-num">FILE 01 — 毎日開く</div>
+      <div class="card-name">候補リスト master</div>
+      <div class="card-en">SPREADSHEET</div>
+      <div class="card-desc">VAIZER の作業台。候補の閲覧・ステージ更新・アクションログ追記すべてここで行う。</div>
+      <div class="card-meta"><span class="k">場所</span> 002_営業部 ／ 02_営業運用<br><span class="k">形式</span> Google Sheet</div>
     </div>
-    <div class="file-cell">
-      <div class="file-label">MANUAL &amp; STRATEGIC — 業務マニュアル・戦略前提</div>
-      <div class="file-item">
-        <div class="file-name">CTO V/ENTER handbook（業務マニュアル）<span style="color:#E85D2F;font-size:10px;font-weight:800;letter-spacing:2px;margin-left:8px;">準備中</span></div>
-        <div class="file-meta">業務マニュアルの正典 ／ 別途作成中・完成後ここから直接リンク</div>
-        <div class="file-when">V/ENTER業務すべての最上位リファレンス。完成後はこの上位として位置づけ</div>
-      </div>
-      <div class="file-item">
-        <div class="file-name">V_ENTER戦略前提_Web刷新×検索広告クロスセル</div>
-        <div class="file-meta">Google Doc ／ 002_営業部 ／ 03_営業ナレッジ</div>
-        <div class="file-when">商談前・提案文面作成時に必読</div>
-      </div>
+    <div class="commit-card">
+      <div class="card-num">FILE 02 — 迷ったら開く</div>
+      <div class="card-name">運用手順 v1（本資料）</div>
+      <div class="card-en">THIS HTML</div>
+      <div class="card-desc">運用ルール・3点コミット・1日の流れ・禁則の定義書。今読んでいるこの資料。</div>
+      <div class="card-meta"><span class="k">場所</span> GitHub Pages ／ Driveバックアップ<br><span class="k">形式</span> HTML</div>
     </div>
-    <div class="file-cell">
-      <div class="file-label">REFERENCE — 必要時に引く</div>
-      <div class="file-item">
-        <div class="file-name">【V_ENTER 営業ガイドライン】脆弱性レポート2ライン</div>
-        <div class="file-meta">Google Doc ／ 02_事業部別_EnterWebAI ／ マニュアル</div>
-        <div class="file-when">脆弱性レポート作成・送付時</div>
-      </div>
-      <div class="file-item">
-        <div class="file-name">V_ENTER_ターゲット基準書_v5</div>
-        <div class="file-meta">Google Sheet ／ 002_営業部 ／ 01_営業企画・戦略</div>
-        <div class="file-when">候補スコアリング・期待値判定時</div>
-      </div>
-      <div class="file-item">
-        <div class="file-name">VAIZO_見積書フォーマット_v2_20260508</div>
-        <div class="file-meta">Google Sheet ／ 002_営業部 直下</div>
-        <div class="file-when">見積書作成時</div>
-      </div>
-    </div>
-    <div class="file-cell archive">
-      <div class="file-label">ARCHIVE — 使わない</div>
-      <div class="file-item">
-        <div class="file-name">_old フォルダ内のすべて</div>
-        <div class="file-meta">002_営業部 ／ 各 _old サブフォルダ</div>
-        <div class="file-when">参照不要。最新版が正</div>
-      </div>
-      <div class="file-item">
-        <div class="file-name">VAIZO_営業手順表_v1（旧 Google Doc）</div>
-        <div class="file-meta">Google Doc ／ 002_営業部 ／ 03_営業ナレッジ</div>
-        <div class="file-when">本HTMLが後継。Doc版は参照不要</div>
-      </div>
+    <div class="commit-card">
+      <div class="card-num">FILE 03 — 業務マニュアル本体 <span style="color:#E85D2F;letter-spacing:2px;">準備中</span></div>
+      <div class="card-name">CTO V/ENTER handbook</div>
+      <div class="card-en">MASTER MANUAL</div>
+      <div class="card-desc">V/ENTER業務すべての正典。テンプレ・基準・チェックリストはここから参照する。完成後はこのページから直接リンク。</div>
+      <div class="card-meta"><span class="k">場所</span> 別途作成中（CTO主導）<br><span class="k">完成後</span> 業務マニュアルの最上位</div>
     </div>
   </div>
   <div class="footer-meta">
@@ -217,7 +169,6 @@
     <div class="step-num">04</div>
     <div class="step-body"><div class="step-detail">これから<span class="accent">毎朝</span>、このシートを開くところから1日が始まる。</div></div>
   </div>
-  <p class="quote-bottom">現在の登録：リフォーム工務店 30件（P0001-P0030・東北中心）。残り候補は別AIリスト完成後に順次追加。</p>
   <div class="footer-meta">
     <span>VAIZO ─ Sales Procedure Guide</span>
     <span>04</span>
@@ -255,13 +206,13 @@
   </div>
   <h2 class="section-h">動いた直後の30秒（毎アクション）</h2>
   <div class="example-block">
-    <span class="ex-label">3点セット送付</span>2026-05-09 16:00 / P0007 / [担当VAIZER] / 3点セット送付 / 候補先宛、デモ＋脆弱性＋コンセプトURLを1通のメールで送信
+    <span class="ex-label">3点セット送付</span>YYYY-MM-DD 16:00 / P0001 / [担当VAIZER] / 3点セット送付 / 候補先宛、デモ＋脆弱性＋コンセプトURLを1通のメールで送信
   </div>
   <div class="example-block">
-    <span class="ex-label">メール</span>2026-05-12 10:00 / P0007 / [担当VAIZER] / メール / 候補先宛、3点セット見ていただけたか確認のリマインドメール送信
+    <span class="ex-label">メール</span>YYYY-MM-DD 10:00 / P0001 / [担当VAIZER] / メール / 候補先宛、3点セット見ていただけたか確認のリマインドメール送信
   </div>
   <div class="example-block">
-    <span class="ex-label">電話</span>2026-05-15 11:30 / P0007 / [担当VAIZER] / 電話 / 候補先へ架電・10分対話、反応良好、来週MTG調整
+    <span class="ex-label">電話</span>YYYY-MM-DD 11:30 / P0001 / [担当VAIZER] / 電話 / 候補先へ架電・10分対話、反応良好、来週MTG調整
   </div>
   <div class="footer-meta">
     <span>VAIZO ─ Sales Procedure Guide</span>
