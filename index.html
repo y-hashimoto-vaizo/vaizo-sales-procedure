@@ -18,8 +18,6 @@
   .bold { font-weight: 800; color: #111; }
   .slide-mission .eyebrow { color: #888; }
   .slide-mission .num { color: #E85D2F; }
-  .mission-statement { font-size: 76px; font-weight: 800; line-height: 1.3; letter-spacing: -1.5px; color: #FFF; }
-  .mission-sub { font-size: 17px; line-height: 1.95; color: #888; margin-top: 48px; letter-spacing: 1.5px; font-weight: 700; }
   .commit-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 4px; }
   .commit-card { border: 1px solid #111; padding: 22px 22px 18px; display: flex; flex-direction: column; background: #FFF; min-height: 280px; }
   .commit-card .card-num { font-size: 11px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 10px; }
@@ -54,6 +52,27 @@
   .quote-bottom { font-size: 13px; color: #444; margin-top: auto; padding-top: 18px; font-weight: 600; line-height: 1.7; }
   .section-h { font-size: 12px; letter-spacing: 4px; color: #E85D2F; font-weight: 800; margin-top: 14px; margin-bottom: 6px; }
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 4px; }
+  .enter-cover { display: flex; flex-direction: column; height: 100%; justify-content: center; }
+  .enter-eyebrow-big { font-size: 12px; color: #888; letter-spacing: 7px; font-weight: 800; margin-bottom: 22px; }
+  .enter-headline { font-size: 64px; font-weight: 800; line-height: 1.25; letter-spacing: -1.5px; color: #FFF; margin-bottom: 50px; }
+  .enter-headline .accent-or { color: #E85D2F; }
+  .enter-pillars { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px; margin-bottom: 40px; }
+  .enter-pillar { border-top: 1px solid #FFF; padding-top: 16px; }
+  .enter-pillar .pillar-num { font-size: 11px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 8px; }
+  .enter-pillar .pillar-name { font-size: 22px; font-weight: 800; color: #FFF; margin-bottom: 10px; letter-spacing: -0.5px; line-height: 1.3; }
+  .enter-pillar .pillar-desc { font-size: 12.5px; line-height: 1.8; color: #BBB; font-weight: 500; }
+  .enter-closing { font-size: 13px; line-height: 1.95; color: #888; font-weight: 600; letter-spacing: 0.5px; padding-top: 20px; border-top: 1px solid #333; }
+  .enter-closing .lab { color: #E85D2F; font-weight: 800; letter-spacing: 3px; font-size: 10px; margin-right: 8px; }
+  .enter-closing .ln { display: block; margin-bottom: 6px; }
+  .mission-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 4px; }
+  .mission-stage { border: 1px solid #111; padding: 22px 22px 18px; display: flex; flex-direction: column; min-height: 290px; position: relative; }
+  .mission-stage .stage-num { font-size: 11px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 10px; }
+  .mission-stage .stage-name { font-size: 26px; font-weight: 800; color: #111; line-height: 1.25; margin-bottom: 4px; letter-spacing: -0.5px; }
+  .mission-stage .stage-en { font-size: 10px; color: #888; letter-spacing: 4px; font-weight: 700; margin-bottom: 14px; }
+  .mission-stage .stage-desc { font-size: 13px; line-height: 1.8; color: #444; flex: 1; font-weight: 500; }
+  .mission-arrow { position: absolute; right: -14px; top: 50%; transform: translateY(-50%); color: #E85D2F; font-size: 18px; font-weight: 800; z-index: 2; }
+  .mission-bottom { margin-top: 22px; padding: 22px 28px; background: #111; color: #FFF; font-size: 22px; font-weight: 800; line-height: 1.5; letter-spacing: -0.5px; }
+  .mission-bottom .bottom-eyebrow { font-size: 10px; color: #E85D2F; letter-spacing: 4px; font-weight: 800; margin-bottom: 8px; display: block; }
   @media print { body { background: #FFF; padding: 0; } .slide { margin: 0; page-break-after: always; } }
 </style>
 </head>
@@ -61,21 +80,83 @@
 
 <div class="slide slide-mission">
   <div class="header-row">
-    <div class="eyebrow">VAIZO ─ MISSION</div>
-    <div class="num">01 / 06</div>
+    <div class="eyebrow">VAIZO ─ V/ENTER</div>
+    <div class="num">01 / 07</div>
   </div>
-  <p class="mission-statement">動いたら、即、<br>シートに記録する。</p>
-  <p class="mission-sub">妥協しない / サボらない / 中途半端な仕事をしない<br>記録のない動きは、私たちの仕事ではない。</p>
+  <div class="enter-cover">
+    <p class="enter-eyebrow-big">ENTER に込めた意味</p>
+    <h2 class="enter-headline">AIに触れる人を、<br><span class="accent-or">一人でも多く。</span></h2>
+    <div class="enter-pillars">
+      <div class="enter-pillar">
+        <div class="pillar-num">01 — 実行</div>
+        <div class="pillar-name">ENTER<br>＝ 自ら動く</div>
+        <div class="pillar-desc">「依頼されてから作る」を壊す。決められた枠の中だけで動かず、自らの手でスピーディーに課題を解決する事業のスタンス。</div>
+      </div>
+      <div class="enter-pillar">
+        <div class="pillar-num">02 — エンターキー</div>
+        <div class="pillar-name">ENTER<br>＝ 押すだけ</div>
+        <div class="pillar-desc">完成品を先出しで提案。何ヶ月もの要件定義は不要。クライアントは目の前のサイトを見て「これでいく」とエンターキーを押すだけ。</div>
+      </div>
+      <div class="enter-pillar">
+        <div class="pillar-num">03 — 突き抜ける</div>
+        <div class="pillar-name">ENTER<br>＝ 突破する</div>
+        <div class="pillar-desc">属人化の壁を、業界の当たり前を、既存の枠組みを、すべて突き抜ける。VAIZOの構造的優位はここから生まれる。</div>
+      </div>
+    </div>
+    <div class="enter-closing">
+      <span class="ln"><span class="lab">外部 EXTERNAL</span>Web制作を入口に、その会社が「AI前提で事業を運営する」第一歩をつくる。</span>
+      <span class="ln"><span class="lab">内部 INTERNAL</span>VAIZER一人ひとりが、Webを通じてAIを使いこなす「エントリー」となる。</span>
+    </div>
+  </div>
   <div class="footer-meta" style="color: #555;">
-    <span>VAIZO ─ NON-NEGOTIABLE</span>
+    <span>VAIZO ─ V/ENTER WEB</span>
     <span>01</span>
   </div>
 </div>
 
 <div class="slide">
   <div class="header-row">
+    <div class="eyebrow">VAIZO ─ MISSION CONNECTION</div>
+    <div class="num">02 / 07</div>
+  </div>
+  <h1>V/ENTERの先に、ミッションがある。</h1>
+  <p class="subtitle">V/ENTERは小さな事業ではない。「<span class="bold">生存のための仕事をなくす</span>」というVAIZOミッション達成への <span class="bold">大動脈</span> である。3段階で繋がっていく。</p>
+  <div class="mission-grid">
+    <div class="mission-stage">
+      <div class="stage-num">STAGE 01 — 体現</div>
+      <div class="stage-name">EMBODY</div>
+      <div class="stage-en">自社で実証する</div>
+      <div class="stage-desc">V/ENTERを通じて、VAIZO自身が「生存のための仕事をなくす」を体現する。AIに業務を委ねた事業構造を、まず自分たちの手で完成させる。</div>
+      <div class="mission-arrow">→</div>
+    </div>
+    <div class="mission-stage">
+      <div class="stage-num">STAGE 02 — 破壊</div>
+      <div class="stage-name">DISRUPT</div>
+      <div class="stage-en">業界の構造を変える</div>
+      <div class="stage-desc">事業が軌道に乗れば、既存の制作会社・コーディング会社に対する破壊的イノベーションになる。Web制作市場の常識そのものを書き換える。</div>
+      <div class="mission-arrow">→</div>
+    </div>
+    <div class="mission-stage">
+      <div class="stage-num">STAGE 03 — 醸成</div>
+      <div class="stage-name">NURTURE</div>
+      <div class="stage-en">健全な危機感を渡す</div>
+      <div class="stage-desc">ここでの実績を持って、制作会社・関連事業者へ提案に伺う。健全な危機感を伴った「相手のニーズの醸成」を行う。次の市場を自ら作る。</div>
+    </div>
+  </div>
+  <div class="mission-bottom">
+    <span class="bottom-eyebrow">CONCLUSION</span>
+    V/ENTERの一件一件が、VAIZOミッション達成の足跡である。
+  </div>
+  <div class="footer-meta">
+    <span>VAIZO ─ Sales Procedure Guide</span>
+    <span>02</span>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="header-row">
     <div class="eyebrow">VAIZO ─ FILE STRUCTURE</div>
-    <div class="num">02 / 06</div>
+    <div class="num">03 / 07</div>
   </div>
   <h1>使うファイルは、3つだけ。</h1>
   <p class="subtitle">これ以外は意識しなくていい。具体的なテンプレや基準はすべて <span class="bold">CTO V/ENTER handbook</span> の中で参照する。</p>
@@ -104,14 +185,14 @@
   </div>
   <div class="footer-meta">
     <span>VAIZO ─ Sales Procedure Guide</span>
-    <span>02</span>
+    <span>03</span>
   </div>
 </div>
 
 <div class="slide">
   <div class="header-row">
     <div class="eyebrow">VAIZO ─ COMMITMENT</div>
-    <div class="num">03 / 06</div>
+    <div class="num">04 / 07</div>
   </div>
   <h1>3点を、必ず作る。</h1>
   <p class="subtitle">候補1社につき、デモ製作担当 VAIZER は <span class="bold">3点セット</span> を必ず仕上げる。全件が対象。1点でも欠けた状態で送付してはならない。</p>
@@ -145,14 +226,14 @@
   </div>
   <div class="footer-meta">
     <span>VAIZO ─ Sales Procedure Guide</span>
-    <span>03</span>
+    <span>04</span>
   </div>
 </div>
 
 <div class="slide">
   <div class="header-row">
     <div class="eyebrow">VAIZO ─ SET UP</div>
-    <div class="num">04 / 06</div>
+    <div class="num">05 / 07</div>
   </div>
   <h1>始める前に。シートをブックマーク。</h1>
   <div class="url-box">
@@ -163,7 +244,7 @@
     <div class="step-num">01</div>
     <div class="step-body"><div class="step-detail">上のURLをChromeで開き、<span class="bold">ブックマークバーに固定</span>する。</div></div>
     <div class="step-num">02</div>
-    <div class="step-body"><div class="step-detail">3タブ構成を確認：<span class="bold">候補リスト / アクションログ / 日報集計</span>。候補リストはA-Sの19列(手動11＋自動8)。L〜O＝3点製作・送付、P〜S＝接触履歴。</div></div>
+    <div class="step-body"><div class="step-detail">3タブ構成を確認：<span class="bold">候補リスト / アクションログ / 日報集計</span>。候補リストはA-Sの19列（手動11＋自動8）。L〜O＝3点製作・送付、P〜S＝接触履歴。</div></div>
     <div class="step-num">03</div>
     <div class="step-body"><div class="step-detail">候補リスト E列「営業窓口VAIZER」と F列「デモ製作担当VAIZER」で<span class="bold">自分のフルネーム</span>を検索。担当案件と、3点コミットの責任を把握。</div></div>
     <div class="step-num">04</div>
@@ -171,14 +252,14 @@
   </div>
   <div class="footer-meta">
     <span>VAIZO ─ Sales Procedure Guide</span>
-    <span>04</span>
+    <span>05</span>
   </div>
 </div>
 
 <div class="slide">
   <div class="header-row">
     <div class="eyebrow">VAIZO ─ DAILY ROUTINE</div>
-    <div class="num">05 / 06</div>
+    <div class="num">06 / 07</div>
   </div>
   <h1>朝の5分、動いた直後の30秒。</h1>
   <h2 class="section-h">朝の5分（毎日）</h2>
@@ -206,24 +287,24 @@
   </div>
   <h2 class="section-h">動いた直後の30秒（毎アクション）</h2>
   <div class="example-block">
-    <span class="ex-label">3点セット送付</span>YYYY-MM-DD 16:00 / P0001 / [担当VAIZER] / 3点セット送付 / 候補先宛、デモ＋脆弱性＋コンセプトURLを1通のメールで送信
+    <span class="ex-label">3点セット送付</span>YYYY-MM-DD HH:MM / P0001 / [担当VAIZER] / 3点セット送付 / 候補先宛、デモ＋脆弱性＋コンセプトURLを1通のメールで送信
   </div>
   <div class="example-block">
-    <span class="ex-label">メール</span>YYYY-MM-DD 10:00 / P0001 / [担当VAIZER] / メール / 候補先宛、3点セット見ていただけたか確認のリマインドメール送信
+    <span class="ex-label">メール</span>YYYY-MM-DD HH:MM / P0001 / [担当VAIZER] / メール / 候補先宛、3点セット見ていただけたか確認のリマインドメール送信
   </div>
   <div class="example-block">
-    <span class="ex-label">電話</span>YYYY-MM-DD 11:30 / P0001 / [担当VAIZER] / 電話 / 候補先へ架電・10分対話、反応良好、来週MTG調整
+    <span class="ex-label">電話</span>YYYY-MM-DD HH:MM / P0001 / [担当VAIZER] / 電話 / 候補先へ架電・10分対話、反応良好、来週MTG調整
   </div>
   <div class="footer-meta">
     <span>VAIZO ─ Sales Procedure Guide</span>
-    <span>05</span>
+    <span>06</span>
   </div>
 </div>
 
 <div class="slide">
   <div class="header-row">
     <div class="eyebrow">VAIZO ─ EVENING / WEEKLY / RULES</div>
-    <div class="num">06 / 06</div>
+    <div class="num">07 / 07</div>
   </div>
   <h1>夕方の3分と、月曜会議。</h1>
   <div class="step-grid" style="grid-template-columns: 60px 1fr;">
@@ -254,7 +335,7 @@
         </div>
         <div class="qa-block">
           <div class="q">どのファイルを使えばいい？</div>
-          <div class="a">スライド02「ファイル構成」を参照。CTO V/ENTER handbook完成後はそれが業務マニュアルの正典。</div>
+          <div class="a">スライド03「ファイル構成」を参照。マスター以外は触らない。CTO V/ENTER handbook完成後はそれが業務マニュアルの正典。</div>
         </div>
         <div class="qa-block">
           <div class="q">期待値の付け方は？</div>
@@ -269,7 +350,7 @@
   </div>
   <div class="footer-meta">
     <span>VAIZO ─ Sales Procedure Guide</span>
-    <span>06 / END</span>
+    <span>07 / END</span>
   </div>
 </div>
 
